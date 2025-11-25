@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Developer Profile Card</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f7f6;
+            display: flex; 
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        .profile-card {
+            width: 90%;
+            max-width: 400px; 
+            background-color: #ffffff;
+            border-radius: 15px;
+            overflow: hidden; 
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            padding-bottom: 20px;
+        }
+
+        .profile-header {
+            background-color: #3f51b5; 
+            color: white;
+            padding: 30px 20px 70px; 
+            position: relative;
+        }
+
+        .profile-avatar {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%; 
+            border: 5px solid white; 
+            position: absolute; 
+            bottom: -60px; 
+            left: 50%;
+            transform: translateX(-50%);
+            object-fit: cover;
+        }
+
+        .profile-header h1 {
+            margin-top: 0;
+            font-size: 1.8em;
+        }
+
+        .profile-header h2 {
+            font-weight: 300;
+            font-size: 1em;
+            opacity: 0.8;
+        }
+
+        .profile-body {
+            padding: 80px 30px 30px; 
+        }
+
+        .bio {
+            font-size: 1em;
+            color: #555;
+            line-height: 1.6;
+            margin-bottom: 25px;
+        }
+
+        .info-section {
+            padding: 15px 0;
+            border-top: 1px solid #eee;
+            text-align: left; 
+            padding: 15px 30px; 
+        }
+
+        .info-item {
+            width: 100%;
+            font-size: 0.9em;
+            color: #333;
+            margin-bottom: 15px; 
+        }
+        
+        .tech-skill {
+            display: inline-block;
+            background-color: #e3f2fd; 
+            color: #1e88e5; 
+            font-weight: 600;
+            font-size: 0.8em; 
+            padding: 3px 6px;
+            margin: 4px 4px 4px 0; 
+            border-radius: 4px;
+        }
+
+
+        .profile-footer {
+            padding: 0 30px 20px;
+        }
+
+        .profile-footer h3 {
+            color: #3f51b5;
+            margin-bottom: 15px;
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 15px; 
+        }
+
+        .link-item {
+            display: inline-flex; 
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            background-color: #f0f0f0; 
+            color: #3f51b5; 
+            font-size: 1.2em;
+            text-decoration: none;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease; 
+        }
+        
+        .link-item.mulearn {
+            display: flex; 
+            align-items: center; 
+            justify-content: center; 
+        }
+
+        .mulearn-logo-img {
+            width: 70%; 
+            height: 70%;
+            object-fit: contain; 
+            display: block;
+        }
+
+        .link-item:hover {
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+        }
+        
+        .link-item.github:hover,
+        .link-item.linkedin:hover,
+        .link-item.instagram:hover,
+        .link-item.mulearn:hover {
+             transform: translateY(-5px);
+        }
+
+        .link-item.github:hover {
+            background-color: #333;
+            color: white;
+        }
+        .link-item.linkedin:hover {
+            background-color: #0077b5;
+            color: white;
+        }
+        .link-item.instagram:hover {
+            background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888, #833ab4, #5851db);
+            color: white;
+        }
+        .link-item.mulearn:hover {
+            background-color: #4CAF50;
+        }
+    </style>
+</head>
+<body>
+    <div class="profile-card">
+        <div class="profile-header">
+            <img src="JR_Photo.jpg" alt="Profile Picture" class="profile-avatar">
+            <h1>Jairaj R</h1>
+            <h2>Computer Science and Engineering | College of Engineering Trivandrum | Glitch CET | Mulearner</h2>
+        </div>
+
+        <div class="profile-body">
+            <p class="bio">
+                A B.Tech CSE student passionate about software development, problem-solving, and building real-world applications. 
+                Currently focusing on C++, Java and DSA while exploring Python, AI/ML, and full-stack web development. 
+                I enjoy working on impactful projects, and continuously improving my skills through hackathons, hands-on projects, and learning new technologies.
+            </p>
+        
+            <div class="info-section">
+                
+                <div class="info-item">
+                    <strong>Roles:</strong> <br>
+                    Technical Team Member, Glitch CET
+                </div>
+
+                <div class="info-item">
+                    <strong>Tech Stack:</strong> <br>
+                    <span class="tech-skill">Python</span>
+                    <span class="tech-skill">C</span>
+                    <span class="tech-skill">VS Code</span>
+                    <span class="tech-skill">Git</span>
+                    <span class="tech-skill">GitHub</span>
+                    <span class="tech-skill">C++</span>
+                    <span class="tech-skill">HTML</span>
+                    <span class="tech-skill">CSS</span>
+                    <span class="tech-skill">JavaScript</span>
+                    <span class="tech-skill">SQL</span>
+                    <span class="tech-skill">Bash</span>
+                    <span class="tech-skill">Java</span>
+                </div>
+
+                <div class="info-item">
+                    <strong>Skills:</strong> <br>
+                    <span class="tech-skill">AI/ML</span>
+                    <span class="tech-skill">Web Development</span>
+                    <span class="tech-skill">Data Structures & Algorithms</span>
+                    <span class="tech-skill">Problem Solving</span>
+                    <span class="tech-skill">Software Development</span>
+
+                </div>
+                
+                <div class="info-item">
+                    <strong>Location:</strong> <br>
+                    Thiruvananthapuram, Kerala, India
+                </div>
+
+            </div>
+        </div>
+
+        <div class="profile-footer">
+            <h3>Connect with Me</h3>
+            <div class="social-links">
+                <a href="https://github.com/jairajrenjith" target="_blank" class="link-item github" title="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/jairaj-r-47a930333/" target="_blank" class="link-item linkedin" title="LinkedIn">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="https://www.instagram.com/jairajrenjith_1019/" target="_blank" class="link-item instagram" title="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://app.mulearn.org/profile/jairajr@mulearn" target="_blank" class="link-item mulearn" title="Mulearn">
+                    <img src="mulearnlogo.png" alt="Mulearn Logo" class="mulearn-logo-img">
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
